@@ -19,7 +19,7 @@
   },
   "lint-staged": {
     "*.{js,json,css,md}": [
-      "prettier --write",
+      "prettier --write --config ./.prettierrc.js --config-precedence file-override",
       "git add"
     ]
   },
